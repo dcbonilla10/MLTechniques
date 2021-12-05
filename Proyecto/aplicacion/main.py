@@ -55,11 +55,11 @@ def run():
     predicted_category = predicted_category[0].replace('_(tiempos_sujetos_a_variación_por_protocolos_de_bioseguridad)','')
     predicted_category = predicted_category.replace('__label__','')
     predicted_category = predicted_category.replace('_',' ')
-    print('\nSu caso será asignado a la categoría de: ' + predicted_category)
+    print('\nSu caso sera asignado a la categoria de: ' + predicted_category)
     print('\nLa probabilidad de que su caso pertenezca a la categoria ' + predicted_category +  
           ' es de: ' + str(round(prediction_probability, ndigits=2)*100))
-    print('\nSi la probabilidad es baja, un agente del DSIT se encargará de reasignar su caso para solucionar su problema más rápidamente')
-    print("\nGracias a esta asignación su petición será solucionada rápidamenmte, estaremos en contacto!")
+    print('\nSi la probabilidad es baja, un agente del DSIT se encargara de reasignar su caso para solucionar su problema')
+    print("\nGracias a esta asignación su petición sera solucionada rapidamente, estaremos en contacto!")
     
 #Correr modelo
 if __name__ == '__main__':
